@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { Grid, GridItem, Show, useBreakpointValue } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
+import GameGrid from "./components/GameGrid";
 
 function App() {
   const isAboveLg = useBreakpointValue({ base: false, lg: true });
@@ -25,7 +26,7 @@ function App() {
           </GridItem>
         )}
         <GridItem area="main" bg="dodgerblue">
-          Main
+          <GameGrid /> 
         </GridItem>
       </Grid>
     </>
